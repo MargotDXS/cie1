@@ -1,0 +1,174 @@
+#titreClub {
+    margin-top: -15%;
+}
+h1 {
+    grid-column: 1/ span 12;
+    font-family: "dosisMedium", "sans-serif";
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-bottom: 2%;
+}
+p {
+    font-family: "dosisLight", "sans-serif";
+    font-size: 1.4rem;
+    grid-column: 3/ span 8;
+    text-align: center;
+    margin-bottom: 8%;
+}
+#vert, #bleu, #rouge {
+    grid-column: 1/ span 12;
+    height: 1rem;
+    opacity: 0.7;
+}
+#vert{
+    background-color: #58b24a;
+}
+#bleu{
+    background-color:#29b1d6;
+}
+#rouge{
+    background-color:#cf191c;
+    margin-bottom: 4%;    
+}
+#natation {
+    grid-column: 3/ span 8;
+    margin-top: 2%;
+}
+#velo {
+    grid-column: 3/ span 8;
+    margin-top: 2%;
+}
+#course {
+    grid-column: 3/ span 8;
+    margin-top: 2%;
+}
+#natation img, #velo img, #course img {
+    width: 67vw;
+    height: 27vh;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+#image{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../ressources/images/shana/creux_du_van.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    grid-column: 1/ span 12;
+    height: 50vh;
+    margin-bottom: 8%;
+}
+#image img {
+    width: 25vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.entrainements {
+    border-radius: 1em;
+}
+.entrNage {
+    grid-column: 3/ span 4;
+    margin-right: 5%;
+    box-shadow: 2px 3px 10px rgba(17, 187, 2017, 0.2)
+}
+.entrVelo {
+    grid-column: 7/ span 4;
+    margin-left: 5%;
+    box-shadow: 2px 3px 10px rgba(207, 25, 28, 0.2)
+}
+.entrCourse {
+    margin-top: 2%;
+    grid-column: 3/ span 4;
+    margin-right: 5%;
+    box-shadow: 2px 3px 10px rgba(88, 178, 74, 0.2)
+}
+.entrTriathlon {
+    grid-column: 7/ span 4;
+    margin-left: 5%;
+    margin-top: 2%;
+    box-shadow: 2px 3px 10px rgba(157, 152, 153, 0.2)
+}
+#contactText {
+    margin-top: 5%;
+}
+button {
+    font-family: "dosisLight", "sans-serif";
+    grid-column: 4/ span 6;
+    align-self: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(37, 187, 217, 0.15);
+    border: solid 0.3rem rgb(37, 187, 217);
+    border-radius: 1rem;
+    margin: 12% auto 24% auto;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: rgb(37, 187, 217);
+}
+button a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+#baseline {
+    font-size: 1.4rem;
+    font-family: "dosisLight", "sans-serif";
+    font-style: italic;
+}
+.rue {
+    margin-bottom: 1%;
+}
+@media only screen and (min-width: 700px) {
+    #titreClub {
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 4rem;
+    }
+    #natation, #course {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 7%;
+    }
+    #velo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 7%;
+    }
+    #natation img, #velo img, #course img {
+        width: 34vw;
+        height: 47vh;
+        margin: 0;
+    }
+    #natation p, #velo p, #course p {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #natation p, #course p {
+        margin-left: 2%;
+    }
+    #velo p{
+        margin-right: 2%;
+    }
+    button a {
+        font-size: 4rem;
+    }
+    #baseline {
+        font-size: 4rem;
+    }
+    #image img{
+        width: 15vw;
+    }
+}

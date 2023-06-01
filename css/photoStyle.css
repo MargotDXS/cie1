@@ -1,0 +1,40 @@
+.photos{
+    grid-column: span 12;
+    padding: 7%;
+}
+.titre{
+    grid-column: 1/ span 12;
+    text-align: center;
+    font-family:"dosisMedium", "sans-serif";;
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    margin-top: -15%;
+}
+.photos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.legende{
+    text-align: center;
+    font-family: "dosisLight", "sans-serif";
+    font-size: 1.4rem;
+    padding-top: 1%;
+}
+footer {
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 700px) {
+    .photos{
+        grid-column: span 4;
+        margin-bottom: 7%;
+    }
+    .legende{
+        font-size: 2rem;
+    }
+    .titre{
+        font-size: 5rem;
+        margin-top: 0;
+    }
+}

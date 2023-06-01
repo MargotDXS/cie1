@@ -1,0 +1,73 @@
+.titreContact {
+    grid-column: 1/ span 12;
+    font-family: "dosisMedium", "sans-serif";
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-bottom: 2%;
+}
+.descriptionContact, .descriptionContact a, #labelNameField, #nameField, #labelMailField, #mailField, #labelObjetField, #objetField, #labelMessageField, #messageField, #sendButton {
+    font-family: "dosisLight", "sans-serif";
+    font-size: 1.4rem;
+}
+.descriptionContact {
+    grid-column: 3/ span 8;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.descriptionContact a {
+    text-decoration: none;
+    color: rgb(37, 187, 217);
+}
+#labelNameField, #labelMailField, #labelObjetField, #labelMessageField {
+    grid-column: 3/ span 2;
+}
+#nameField, #mailField, #objetField, #messageField {
+    grid-column: 3/ span 8;
+    margin-bottom: 4%;
+    margin-top: 1%;
+    padding: 1%;
+}
+#nameField:focus, #mailField:focus, #objetField:focus, #messageField:focus {
+    border: solid 0.5rem rgb(37, 187, 217);
+    border-radius: 1em;
+    outline: none;
+}
+#messageField {
+    height: 20rem;
+}
+#sendButton {
+    grid-column: 5/ span 4;
+    justify-self: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(37, 187, 217, 0.15);
+    border: solid 0.3rem rgb(37, 187, 217);
+    border-radius: 1rem;
+    margin: 12% auto 24% auto;
+    transition: 0.5s;
+    color: black;
+}
+#sendButton:hover {
+    background-color: rgb(37, 187, 217);
+}
+#logo_bg {
+    display: none;
+    
+}
+
+@media only screen and (min-width: 700px) {
+    .descriptionContact, .descriptionContact a, #labelNameField, #nameField, #labelMailField, #mailField, #labelObjetField, #objetField, #labelMessageField, #messageField, #sendButton {
+        font-size: 4rem;
+    }
+    .titreContact {
+        font-size: 5rem;
+    }
+    #logo_bg {
+        display: block;
+        position: absolute;
+        right: -10%;
+        height: 90vh;
+        top: 190%;
+        opacity: 0.3;
+        z-index: -10;
+    }
+}
